@@ -1,0 +1,151 @@
+@import "../../scss/AdaptivValue.scss";
+
+.Movie {
+  @include adaptiv-value("padding", 30, 15, 1);
+}
+
+.body {
+  display: flex;
+}
+
+.image {
+  display: flex;
+  flex-direction: column;
+  flex: 0 0 30%;
+}
+
+.img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.about {
+  color: white;
+  @include adaptiv-value("padding-left", 40, 20, 1);
+}
+
+.name {
+  font-weight: bold;
+  @include adaptiv-value("font-size", 30, 22, 1);
+}
+
+.original {
+  padding-top: 5px;
+  color: gray;
+  @include adaptiv-value("font-size", 16, 12, 1);
+}
+
+.short_description {
+  padding-top: 20px;
+  @include adaptiv-value("font-size", 16, 12, 1);
+}
+
+.button {
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: orange;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  padding: 0;
+  border-width: 0;
+  border-radius: 5px;
+  margin-top: 20px;
+  transition: opacity 0.3s ease;
+  @include adaptiv-value("font-size", 16, 10, 1);
+  @include adaptiv-value("height", 40, 30, 1);
+  &:hover {
+    opacity: 0.7;
+  }
+}
+
+.title {
+  font-weight: bold;
+  font-size: 24px;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  @include adaptiv-value("font-size", 24, 18, 1);
+}
+
+.column_first {
+  color: gray;
+  @include adaptiv-value("padding-right", 40, 20, 1);
+  @include adaptiv-value("padding-bottom", 10, 5, 1);
+}
+
+.column_second {
+
+  @include adaptiv-value("padding-bottom", 10, 5, 1);
+}
+
+.age {
+  font-weight: bold;
+  border: 1px solid white;
+  display: inline;
+  font-size: 14px;
+  padding: 3px;
+  border-radius: 5px;
+}
+
+.description_title {
+  font-weight: bold;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  @include adaptiv-value("font-size", 24, 18, 1);
+}
+
+.description {
+  @include adaptiv-value("font-size", 16, 12, 1);
+  @include adaptiv-value("line-height", 22, 18, 1);
+}
+
+.table {
+  @include adaptiv-value("font-size", 16, 12, 1);
+  padding-right: 5px;
+}
+
+.row {
+
+}
+
+.frames {
+
+}
+
+.frames_title {
+  text-align: center;
+  color: white;
+  font-weight: bold;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  @include adaptiv-value("font-size", 24, 18, 1);
+}
+
+.frames_list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+
+}
+
+.frame {
+  flex: 0 0 18%;
+  margin: 7px;
+  transition: all 0.3s ease;
+  img {
+    width: 100%;
+  }
+  &:hover {
+    opacity: 0.5;
+  }
+}
+
+.error {
+  text-align: center;
+  padding: 20px;
+  color: white;
+  font-size: 20px;
+}

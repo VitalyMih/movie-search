@@ -1,0 +1,20 @@
+.Home {
+  text-align: center;
+  padding: 0 20px;
+}
+
+.movies {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.empty {
+  color: white;
+  font-size: 20px;
+}
+
+.error {
+  color: white;
+  font-size: 20px;
+}
